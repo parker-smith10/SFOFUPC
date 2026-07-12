@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Archivo Black", "Arial Narrow", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --color-osu-orange: #ff7300;
+  --color-osu-orange-dark: #cc5c00;
+  --color-osu-black: #0a0a0a;
+  --color-osu-ink: #17181a;
+  --color-osu-paper: #faf9f7;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-osu-paper);
+  color: var(--color-osu-black);
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+}
