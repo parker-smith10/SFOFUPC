@@ -28,8 +28,10 @@ export default function Login() {
     <div className="flex min-h-screen flex-col items-center justify-center bg-osu-black px-4">
       <div className="w-full max-w-sm">
         <div className="mb-8 text-center">
-          <div className="font-display text-3xl text-osu-orange">OSU</div>
-          <div className="font-display text-2xl text-osu-paper">UNIFORM PICK&apos;EM</div>
+          <div className="font-display text-3xl text-osu-orange">The Smith Family</div>
+          <div className="font-display text-2xl text-osu-paper">
+            Oklahoma State Football Uniform Picking Competition
+          </div>
         </div>
 
         <form
