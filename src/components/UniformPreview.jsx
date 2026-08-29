@@ -52,7 +52,7 @@ export default function UniformPreview({ helmet, jersey, pants, logo, size = 'md
           x="80"
           y="150"
           textAnchor="middle"
-          fontFamily="'Barlow Semi Condensed', sans-serif"
+          fontFamily="'Inter', sans-serif"
           fontSize="26"
           fontWeight="800"
           fill={jerseyDetail}
@@ -61,36 +61,34 @@ export default function UniformPreview({ helmet, jersey, pants, logo, size = 'md
           10
         </text>
 
-        {/* ---------- Helmet (side profile, facing left) ---------- */}
+        {/* ---------- Helmet ---------- */}
         {/* shell */}
         <path
-          d="M96 15
-             C64 11 36 27 32 55
-             C31 64 33 72 40 79
-             C45 84 53 83 57 76
-             C60 71 62 66 68 64
-             C77 62 85 68 89 77
-             C92 83 99 85 105 83
-             C122 78 130 62 127 45
-             C124 29 114 18 96 15 Z"
+          d="M80 12
+             C112 12 126 34 126 56
+             C126 74 116 86 104 90
+             L96 90
+             C98 78 96 66 84 62
+             L52 62
+             C46 50 44 30 62 18
+             C68 14 74 12 80 12 Z"
           fill={helmetColor}
-          stroke="#00000033"
-          strokeWidth="1.6"
+          stroke="#00000022"
+          strokeWidth="1.2"
         />
-        {/* crown highlight */}
-        <path d="M52 25 C43 33 39 44 40 55" fill="none" stroke={helmetDetail} strokeOpacity="0.28" strokeWidth="4" strokeLinecap="round" />
+        {/* dome highlight */}
+        <path d="M66 22 Q80 16 98 24" fill="none" stroke={helmetDetail} strokeOpacity="0.18" strokeWidth="5" strokeLinecap="round" />
+        {/* center stripe */}
+        <path d="M80 12 C72 26 72 44 78 60" fill="none" stroke={helmetDetail} strokeOpacity="0.55" strokeWidth="6" strokeLinecap="round" />
         {/* ear hole */}
-        <circle cx="86" cy="58" r="6.5" fill="#00000033" />
-        <circle cx="86" cy="58" r="2.5" fill={helmetColor} />
-        {/* chin strap */}
-        <path d="M52 88 C60 100 82 100 90 87" fill="none" stroke="#00000033" strokeWidth="2.4" strokeLinecap="round" />
-        {/* facemask cage */}
-        <g fill="none" stroke={facemask} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M58 74 C34 76 24 84 28 95 L88 95 C94 90 92 80 84 76" />
-          <path d="M30 88 L86 88" />
-          <path d="M45 79 L43 95" />
-          <path d="M61 78 L61 95" />
-          <path d="M76 80 L76 95" />
+        <circle cx="92" cy="66" r="6" fill="#00000022" />
+        {/* facemask */}
+        <g fill="none" stroke={facemask} strokeWidth="2.6" strokeLinecap="round">
+          <path d="M52 62 C40 64 34 74 40 86 L104 86 C112 82 106 66 96 66" />
+          <path d="M46 74 L102 74" />
+          <path d="M50 82 L98 82" />
+          <path d="M70 64 L70 86" />
+          <path d="M86 64 L86 86" />
         </g>
       </svg>
 
