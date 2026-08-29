@@ -30,7 +30,7 @@ export default function Login() {
         <div className="mb-8 text-center">
           <div className="font-display text-3xl text-osu-orange">Smith Family</div>
           <div className="font-display text-2xl text-osu-paper">
-            OSU Football Uniform Pick Competition
+            OSU Football Uniform Prediction Competition
           </div>
         </div>
 

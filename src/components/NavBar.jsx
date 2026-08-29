@@ -19,7 +19,7 @@ export default function NavBar() {
               className="font-display text-lg font-extrabold text-white"
               style={{ WebkitTextStroke: '1px #ff7300', paintOrder: 'stroke fill' }}
             >
-              Smith Family OSU Football Uniform Pick Competition
+              Smith Family OSU Football Uniform Prediction Competition
             </span>
           </div>
           <div className="hidden items-center gap-1 sm:flex">
