@@ -1,4 +1,4 @@
-# The Smith Family Oklahoma State Football Uniform Picking Competition
+# Smith Family OSU Football Uniform Pick Competition
 
 A private web app for a small group (8 people) to compete in guessing what
 uniform combination the Oklahoma State University football team will wear

@@ -1,4 +1,4 @@
--- The Smith Family Oklahoma State Football Uniform Picking Competition — initial schema, RLS policies, and seed data.
+-- Smith Family OSU Football Uniform Pick Competition — initial schema, RLS policies, and seed data.
 -- Run this in the Supabase SQL editor (Project → SQL Editor → New query → paste → Run).
 -- The SQL editor runs as the postgres role and bypasses RLS, so this script
 -- can create policies that would otherwise block a normal user.

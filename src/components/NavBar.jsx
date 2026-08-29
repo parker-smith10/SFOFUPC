@@ -15,8 +15,8 @@ export default function NavBar() {
       <header className="sticky top-0 z-40 border-b border-osu-orange/20 bg-osu-black text-osu-paper">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
-            <span className="font-display text-lg text-osu-orange">The Smith Family</span>
-            <span className="font-display text-lg">Oklahoma State Football Uniform Picking Competition</span>
+            <span className="font-display text-lg text-osu-orange">Smith Family</span>
+            <span className="font-display text-lg">OSU Football Uniform Pick Competition</span>
           </div>
           <div className="hidden items-center gap-1 sm:flex">
             <NavLink to="/picks" className={navClass}>
