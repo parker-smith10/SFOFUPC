@@ -73,7 +73,7 @@ export default function Results() {
                 : 'border-osu-black/15 bg-white text-osu-black hover:border-osu-orange/50'
             }`}
           >
-            Wk {g.week}
+            Week {g.week}
           </button>
         ))}
       </div>
