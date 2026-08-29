@@ -16,8 +16,8 @@ export default function NavBar() {
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
             <span
-              className="font-display text-lg font-extrabold text-osu-orange"
-              style={{ WebkitTextStroke: '1px #ffffff', paintOrder: 'stroke fill' }}
+              className="font-display text-lg font-extrabold text-white"
+              style={{ WebkitTextStroke: '1px #ff7300', paintOrder: 'stroke fill' }}
             >
               Smith Family OSU Football Uniform Pick Competition
             </span>
