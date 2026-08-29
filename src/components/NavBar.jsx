@@ -12,7 +12,7 @@ export default function NavBar() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-osu-orange/20 bg-osu-black text-osu-paper">
+      <header className="sticky top-0 z-40 border-b border-osu-orange/20 bg-osu-black/80 text-osu-paper backdrop-blur-md supports-[backdrop-filter]:bg-osu-black/70">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
             <span
@@ -50,7 +50,7 @@ export default function NavBar() {
         </div>
       </header>
 
-      <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-osu-orange/20 bg-osu-black sm:hidden">
+      <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-osu-orange/20 bg-osu-black/80 backdrop-blur-md supports-[backdrop-filter]:bg-osu-black/70 sm:hidden">
         <div className="mx-auto flex max-w-5xl items-stretch justify-around">
           <NavLink to="/picks" className={navClass}>
             Picks
