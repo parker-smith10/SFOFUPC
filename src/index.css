@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Archivo Black", "Arial Narrow", sans-serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Barlow Semi Condensed", system-ui, sans-serif;
+  --font-sans: "Barlow Semi Condensed", system-ui, sans-serif;
 
   --color-osu-orange: #ff7300;
   --color-osu-orange-dark: #cc5c00;
