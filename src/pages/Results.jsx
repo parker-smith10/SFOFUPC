@@ -67,7 +67,7 @@ export default function Results() {
           <button
             key={g.id}
             onClick={() => setSelectedWeek(g.week)}
-            className={`rounded-full border px-3 py-1.5 text-sm font-semibold ${
+            className={`rounded-md border px-3 py-1.5 text-sm font-semibold ${
               selectedWeek === g.week
                 ? 'border-osu-orange bg-osu-orange text-white'
                 : 'border-osu-black/15 bg-white text-osu-black hover:border-osu-orange/50'
@@ -91,7 +91,7 @@ export default function Results() {
               Week {selectedGame.week} — {selectedGame.is_home ? 'vs' : '@'} {selectedGame.opponent}
             </div>
             {!selectedGame.results_published && (
-              <span className="rounded-full bg-osu-black/10 px-3 py-1 text-xs font-semibold uppercase text-osu-black/60">
+              <span className="rounded-md bg-osu-black/10 px-3 py-1 text-xs font-semibold uppercase text-osu-black/60">
                 Pending
               </span>
             )}

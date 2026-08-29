@@ -104,7 +104,7 @@ export default function AdminOptions() {
                     </button>
                     <button
                       onClick={() => toggleActive(opt)}
-                      className="rounded-full border border-osu-black/15 px-3 py-1 text-xs font-semibold"
+                      className="rounded-md border border-osu-black/15 px-3 py-1 text-xs font-semibold"
                     >
                       {opt.is_active ? 'Deactivate' : 'Activate'}
                     </button>

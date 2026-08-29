@@ -1,7 +1,7 @@
 import { NavLink, Outlet } from 'react-router-dom'
 
 const tabClass = ({ isActive }) =>
-  `rounded-full border px-3 py-1.5 text-sm font-semibold whitespace-nowrap ${
+  `rounded-md border px-3 py-1.5 text-sm font-semibold whitespace-nowrap ${
     isActive
       ? 'border-osu-orange bg-osu-orange text-white'
       : 'border-osu-black/15 bg-white text-osu-black hover:border-osu-orange/50'

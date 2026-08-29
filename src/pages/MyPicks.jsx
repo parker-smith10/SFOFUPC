@@ -164,7 +164,7 @@ export default function MyPicks() {
                         type="button"
                         key={opt.id}
                         onClick={() => setForm((f) => ({ ...f, [key]: opt.value }))}
-                        className={`rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${
+                        className={`rounded-md border px-4 py-2 text-sm font-semibold transition-colors ${
                           form[key] === opt.value
                             ? 'border-osu-orange bg-osu-orange text-white'
                             : 'border-osu-black/15 bg-white text-osu-black hover:border-osu-orange/50'
@@ -224,7 +224,7 @@ export default function MyPicks() {
                       </div>
                     )}
                     {points !== null ? (
-                      <span className="rounded-full bg-osu-black px-3 py-1 text-sm font-bold text-osu-paper">
+                      <span className="rounded-md bg-osu-black px-3 py-1 text-sm font-bold text-osu-paper">
                         {points}/4
                       </span>
                     ) : g.results_published === false ? (

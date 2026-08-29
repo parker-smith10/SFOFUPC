@@ -54,7 +54,7 @@ export default function AdminPicks() {
           <button
             key={g.id}
             onClick={() => setSelectedGameId(g.id)}
-            className={`rounded-full border px-3 py-1.5 text-sm font-semibold ${
+            className={`rounded-md border px-3 py-1.5 text-sm font-semibold ${
               selectedGameId === g.id
                 ? 'border-osu-orange bg-osu-orange text-white'
                 : 'border-osu-black/15 bg-white'

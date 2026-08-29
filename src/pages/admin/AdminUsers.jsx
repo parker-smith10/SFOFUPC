@@ -65,7 +65,7 @@ export default function AdminUsers() {
                 className="rounded-lg border border-osu-black/15 px-2 py-1.5 text-sm"
               />
               {p.is_admin && (
-                <span className="rounded-full bg-osu-orange/10 px-2 py-1 text-xs font-semibold text-osu-orange">
+                <span className="rounded-md bg-osu-orange/10 px-2 py-1 text-xs font-semibold text-osu-orange">
                   Admin
                 </span>
               )}

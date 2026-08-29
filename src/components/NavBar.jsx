@@ -42,7 +42,7 @@ export default function NavBar() {
             <span className="hidden text-sm text-osu-paper/70 sm:inline">{profile?.display_name}</span>
             <button
               onClick={signOut}
-              className="rounded-full border border-osu-paper/30 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-osu-paper/80 hover:border-osu-orange hover:text-osu-orange"
+              className="rounded-md border border-osu-paper/30 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-osu-paper/80 hover:border-osu-orange hover:text-osu-orange"
             >
               Sign out
             </button>

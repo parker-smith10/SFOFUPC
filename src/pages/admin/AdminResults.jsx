@@ -131,7 +131,7 @@ export default function AdminResults() {
                       type="button"
                       key={opt.id}
                       onClick={() => setForm((f) => ({ ...f, [key]: opt.value }))}
-                      className={`rounded-full border px-3 py-1.5 text-sm font-semibold ${
+                      className={`rounded-md border px-3 py-1.5 text-sm font-semibold ${
                         form[key] === opt.value
                           ? 'border-osu-orange bg-osu-orange text-white'
                           : opt.is_active
