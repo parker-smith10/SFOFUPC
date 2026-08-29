@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 
 const linkBase =
-  'flex flex-col items-center justify-center gap-0.5 px-3 py-2 text-[11px] font-bold uppercase tracking-wide transition-colors sm:flex-row sm:gap-1.5 sm:text-sm'
+  'flex flex-col items-center justify-center gap-0.5 px-3 py-2 text-[11px] font-bold tracking-wide transition-colors sm:flex-row sm:gap-1.5 sm:text-sm'
 
 export default function NavBar() {
   const { profile, isAdmin, signOut } = useAuth()
@@ -42,7 +42,7 @@ export default function NavBar() {
             <span className="hidden text-sm text-osu-paper/70 sm:inline">{profile?.display_name}</span>
             <button
               onClick={signOut}
-              className="rounded-md border border-osu-paper/30 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-osu-paper/80 hover:border-osu-orange hover:text-osu-orange"
+              className="rounded-md border border-osu-paper/30 px-3 py-1.5 text-xs font-semibold tracking-wide text-osu-paper/80 hover:border-osu-orange hover:text-osu-orange"
             >
               Sign out
             </button>

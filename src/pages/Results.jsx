@@ -91,7 +91,7 @@ export default function Results() {
               Week {selectedGame.week} — {selectedGame.is_home ? 'vs' : '@'} {selectedGame.opponent}
             </div>
             {!selectedGame.results_published && (
-              <span className="rounded-md bg-osu-black/10 px-3 py-1 text-xs font-semibold uppercase text-osu-black/60">
+              <span className="rounded-md bg-osu-black/10 px-3 py-1 text-xs font-semibold text-osu-black/60">
                 Pending
               </span>
             )}
@@ -103,7 +103,7 @@ export default function Results() {
             <div className="overflow-x-auto rounded-xl border border-osu-black/10 bg-white shadow-sm">
               <table className="w-full min-w-[520px] border-collapse text-sm">
                 <thead>
-                  <tr className="border-b border-osu-black/10 bg-osu-black/5 text-left text-xs font-semibold uppercase tracking-wide text-osu-black/60">
+                  <tr className="border-b border-osu-black/10 bg-osu-black/5 text-left text-xs font-semibold tracking-wide text-osu-black/60">
                     <th className="px-3 py-2">Contestant</th>
                     {CATEGORIES.map((c) => (
                       <th key={c.key} className="px-3 py-2">

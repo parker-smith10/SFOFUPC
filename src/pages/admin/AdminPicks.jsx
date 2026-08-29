@@ -78,7 +78,7 @@ export default function AdminPicks() {
         <div className="mt-3 overflow-x-auto rounded-xl border border-osu-black/10 bg-white shadow-sm">
           <table className="w-full min-w-[520px] border-collapse text-sm">
             <thead>
-              <tr className="border-b border-osu-black/10 bg-osu-black/5 text-left text-xs font-semibold uppercase tracking-wide text-osu-black/60">
+              <tr className="border-b border-osu-black/10 bg-osu-black/5 text-left text-xs font-semibold tracking-wide text-osu-black/60">
                 <th className="px-3 py-2">Contestant</th>
                 {CATEGORIES.map((c) => (
                   <th key={c.key} className="px-3 py-2">

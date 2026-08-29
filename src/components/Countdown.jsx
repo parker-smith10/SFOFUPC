@@ -27,7 +27,7 @@ export default function Countdown({ lockAt, onLock }) {
 
   if (locked) {
     return (
-      <span className="inline-flex items-center gap-1.5 rounded-md bg-osu-black px-3 py-1 text-xs font-bold uppercase tracking-wide text-osu-paper">
+      <span className="inline-flex items-center gap-1.5 rounded-md bg-osu-black px-3 py-1 text-xs font-bold tracking-wide text-osu-paper">
         Locked
       </span>
     )
@@ -38,13 +38,13 @@ export default function Countdown({ lockAt, onLock }) {
 
   return (
     <div
-      className={`inline-flex items-center gap-2 rounded-md px-3 py-1 text-xs font-bold uppercase tracking-wide ${
+      className={`inline-flex items-center gap-2 rounded-md px-3 py-1 text-xs font-bold tracking-wide ${
         urgent ? 'bg-osu-orange text-white animate-pulse' : 'bg-osu-black/90 text-osu-paper'
       }`}
     >
       <span>Locks in</span>
       <span className="font-display tabular-nums tracking-normal">
-        {days > 0 ? `${days}d ` : ''}
+        {days > 0 ? `${days} Days ` : ''}
         {String(hours).padStart(2, '0')}:{String(minutes).padStart(2, '0')}:
         {String(seconds).padStart(2, '0')}
       </span>

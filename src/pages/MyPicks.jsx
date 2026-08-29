@@ -133,7 +133,7 @@ export default function MyPicks() {
         <div className="mt-4 rounded-2xl border border-osu-black/10 bg-white p-5 shadow-sm">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
-              <div className="text-xs font-semibold uppercase tracking-wide text-osu-black/50">
+              <div className="text-xs font-semibold tracking-wide text-osu-black/50">
                 Week {upcoming.week}
               </div>
               <div className="font-display text-xl">
@@ -155,7 +155,7 @@ export default function MyPicks() {
             <form onSubmit={handleSubmit} className="mt-5 space-y-4">
               {CATEGORIES.map(({ key, label }) => (
                 <div key={key}>
-                  <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-osu-black/60">
+                  <label className="mb-1.5 block text-xs font-semibold tracking-wide text-osu-black/60">
                     {label}
                   </label>
                   <div className="flex flex-wrap gap-2">
@@ -209,7 +209,7 @@ export default function MyPicks() {
                   className="flex items-center justify-between gap-3 rounded-xl border border-osu-black/10 bg-white p-3 shadow-sm"
                 >
                   <div>
-                    <div className="text-xs font-semibold uppercase tracking-wide text-osu-black/50">
+                    <div className="text-xs font-semibold tracking-wide text-osu-black/50">
                       Week {g.week}
                     </div>
                     <div className="font-semibold">

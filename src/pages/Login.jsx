@@ -38,7 +38,7 @@ export default function Login() {
           onSubmit={handleSubmit}
           className="rounded-2xl border border-osu-orange/20 bg-osu-ink p-6 shadow-xl"
         >
-          <label className="mb-1 block text-xs font-semibold uppercase tracking-wide text-osu-paper/60">
+          <label className="mb-1 block text-xs font-semibold tracking-wide text-osu-paper/60">
             Email
           </label>
           <input
@@ -50,7 +50,7 @@ export default function Login() {
             className="mb-4 w-full rounded-lg border border-osu-paper/15 bg-osu-black px-3 py-2.5 text-osu-paper outline-none focus:border-osu-orange"
           />
 
-          <label className="mb-1 block text-xs font-semibold uppercase tracking-wide text-osu-paper/60">
+          <label className="mb-1 block text-xs font-semibold tracking-wide text-osu-paper/60">
             Password
           </label>
           <input

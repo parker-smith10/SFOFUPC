@@ -122,7 +122,7 @@ export default function AdminResults() {
           <div className="space-y-4">
             {CATEGORIES.map(({ key, label }) => (
               <div key={key}>
-                <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-osu-black/60">
+                <label className="mb-1.5 block text-xs font-semibold tracking-wide text-osu-black/60">
                   {label}
                 </label>
                 <div className="flex flex-wrap gap-2">

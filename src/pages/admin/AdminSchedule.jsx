@@ -100,7 +100,7 @@ export default function AdminSchedule() {
         className="mb-6 grid grid-cols-2 gap-3 rounded-xl border border-osu-black/10 bg-white p-4 shadow-sm sm:grid-cols-4"
       >
         <div>
-          <label className="mb-1 block text-xs font-semibold uppercase text-osu-black/50">Week</label>
+          <label className="mb-1 block text-xs font-semibold text-osu-black/50">Week</label>
           <input
             type="number"
             required
@@ -112,7 +112,7 @@ export default function AdminSchedule() {
           />
         </div>
         <div className="col-span-2">
-          <label className="mb-1 block text-xs font-semibold uppercase text-osu-black/50">Opponent</label>
+          <label className="mb-1 block text-xs font-semibold text-osu-black/50">Opponent</label>
           <input
             type="text"
             required
@@ -122,7 +122,7 @@ export default function AdminSchedule() {
           />
         </div>
         <div>
-          <label className="mb-1 block text-xs font-semibold uppercase text-osu-black/50">Home?</label>
+          <label className="mb-1 block text-xs font-semibold text-osu-black/50">Home?</label>
           <select
             value={form.is_home ? 'yes' : 'no'}
             onChange={(e) => setForm((f) => ({ ...f, is_home: e.target.value === 'yes' }))}
@@ -133,7 +133,7 @@ export default function AdminSchedule() {
           </select>
         </div>
         <div className="col-span-2">
-          <label className="mb-1 block text-xs font-semibold uppercase text-osu-black/50">Kickoff</label>
+          <label className="mb-1 block text-xs font-semibold text-osu-black/50">Kickoff</label>
           <input
             type="datetime-local"
             required
@@ -143,7 +143,7 @@ export default function AdminSchedule() {
           />
         </div>
         <div className="col-span-2">
-          <label className="mb-1 block text-xs font-semibold uppercase text-osu-black/50">Lock At</label>
+          <label className="mb-1 block text-xs font-semibold text-osu-black/50">Lock At</label>
           <input
             type="datetime-local"
             required
@@ -182,7 +182,7 @@ export default function AdminSchedule() {
             className="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-osu-black/10 bg-white p-3 shadow-sm"
           >
             <div>
-              <div className="text-xs font-semibold uppercase text-osu-black/50">Week {g.week}</div>
+              <div className="text-xs font-semibold text-osu-black/50">Week {g.week}</div>
               <div className="font-semibold">
                 {g.is_home ? 'vs' : '@'} {g.opponent}
               </div>

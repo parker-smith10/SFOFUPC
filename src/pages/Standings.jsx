@@ -134,7 +134,7 @@ export default function Standings() {
           <div className="mt-4 overflow-x-auto rounded-xl border border-osu-black/10 bg-white shadow-sm">
             <table className="w-full min-w-[560px] border-collapse text-sm">
               <thead>
-                <tr className="border-b border-osu-black/10 bg-osu-black/5 text-left text-xs font-semibold uppercase tracking-wide text-osu-black/60">
+                <tr className="border-b border-osu-black/10 bg-osu-black/5 text-left text-xs font-semibold tracking-wide text-osu-black/60">
                   <th className="px-3 py-2">Rank</th>
                   <th className="px-3 py-2">Name</th>
                   <th className="px-3 py-2 text-right">Points</th>
@@ -160,7 +160,7 @@ export default function Standings() {
           <div className="overflow-x-auto rounded-xl border border-osu-black/10 bg-white shadow-sm">
             <table className="w-full min-w-[560px] border-collapse text-sm">
               <thead>
-                <tr className="border-b border-osu-black/10 bg-osu-black/5 text-left text-xs font-semibold uppercase tracking-wide text-osu-black/60">
+                <tr className="border-b border-osu-black/10 bg-osu-black/5 text-left text-xs font-semibold tracking-wide text-osu-black/60">
                   <th className="px-3 py-2">Name</th>
                   {CATEGORIES.map((c) => (
                     <th key={c.key} className="px-3 py-2 text-right">
@@ -238,7 +238,7 @@ export default function Standings() {
 function StatCard({ label, children }) {
   return (
     <div className="rounded-xl border border-osu-black/10 bg-white p-4 shadow-sm">
-      <div className="text-xs font-semibold uppercase tracking-wide text-osu-black/50">{label}</div>
+      <div className="text-xs font-semibold tracking-wide text-osu-black/50">{label}</div>
       <div className="mt-1 font-semibold text-osu-black">{children}</div>
     </div>
   )
