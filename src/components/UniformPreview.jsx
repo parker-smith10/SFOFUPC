@@ -90,17 +90,31 @@ export default function UniformPreview({ helmet, jersey, pants, logo, size = 'md
           <path d="M70 64 L70 86" />
           <path d="M86 64 L86 86" />
         </g>
+        {/* logo decal on the forehead */}
+        {logo ? (
+          <foreignObject x="53" y="30" width="54" height="28">
+            <div
+              xmlns="http://www.w3.org/1999/xhtml"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '100%',
+                height: '100%',
+                textAlign: 'center',
+                lineHeight: 1.05,
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '8px',
+                fontWeight: 700,
+                color: helmetDetail,
+                overflow: 'hidden',
+              }}
+            >
+              {logo}
+            </div>
+          </foreignObject>
+        ) : null}
       </svg>
-
-      {logo ? (
-        <div
-          className={`max-w-[150px] text-center font-semibold leading-tight text-osu-black/75 ${
-            size === 'sm' ? 'text-[10px]' : 'text-xs'
-          }`}
-        >
-          {logo}
-        </div>
-      ) : null}
     </div>
   )
 }
