@@ -127,13 +127,13 @@ export default function MyPicks() {
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-6">
-      <h1 className="font-display text-2xl text-osu-black">My Picks</h1>
+      <h1 className="border-l-4 border-osu-orange pl-3 font-display text-2xl text-osu-black">My Picks</h1>
 
       {upcoming ? (
-        <div className="mt-4 rounded-2xl border border-osu-black/10 bg-white p-5 shadow-sm">
+        <div className="mt-4 rounded-2xl border border-osu-black/10 border-t-4 border-t-osu-orange bg-white p-5 shadow-sm">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
-              <div className="text-xs font-semibold tracking-wide text-osu-black/50">
+              <div className="text-xs font-semibold tracking-wide text-osu-orange">
                 Week {upcoming.week}
               </div>
               <div className="font-display text-xl">
@@ -198,7 +198,7 @@ export default function MyPicks() {
 
       {pastGames.length > 0 && (
         <div className="mt-8">
-          <h2 className="mb-3 font-display text-lg text-osu-black">Past Games</h2>
+          <h2 className="mb-3 border-l-4 border-osu-orange pl-2.5 font-display text-lg text-osu-black">Past Games</h2>
           <div className="space-y-3">
             {pastGames.map((g) => {
               const pick = picksByGame[g.id]

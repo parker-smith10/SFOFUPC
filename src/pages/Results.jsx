@@ -60,7 +60,7 @@ export default function Results() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-6">
-      <h1 className="font-display text-2xl text-osu-black">Results</h1>
+      <h1 className="border-l-4 border-osu-orange pl-3 font-display text-2xl text-osu-black">Results</h1>
 
       <div className="mt-4 flex flex-wrap gap-2">
         {games.map((g) => (
@@ -103,7 +103,7 @@ export default function Results() {
             <div className="overflow-x-auto rounded-xl border border-osu-black/10 bg-white shadow-sm">
               <table className="w-full min-w-[520px] border-collapse text-sm">
                 <thead>
-                  <tr className="border-b border-osu-black/10 bg-osu-black/5 text-left text-xs font-semibold tracking-wide text-osu-black/60">
+                  <tr className="border-b-2 border-osu-orange/40 bg-osu-black/5 text-left text-xs font-semibold tracking-wide text-osu-black/60">
                     <th className="px-3 py-2">Contestant</th>
                     {CATEGORIES.map((c) => (
                       <th key={c.key} className="px-3 py-2">

@@ -10,7 +10,7 @@ const tabClass = ({ isActive }) =>
 export default function AdminLayout() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-6">
-      <h1 className="font-display text-2xl text-osu-black">Admin</h1>
+      <h1 className="border-l-4 border-osu-orange pl-3 font-display text-2xl text-osu-black">Admin</h1>
       <div className="mt-4 flex gap-2 overflow-x-auto pb-1">
         <NavLink to="/admin/schedule" className={tabClass}>
           Schedule
